@@ -1,7 +1,7 @@
 // import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { Ballet, Inter } from '@next/font/google'
-import styles from '/styles/Home.module.css'
+import styles from '../sidebar/Sidebar.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,8 +23,7 @@ export function Sidebar() {
 
             <ul key={item.href}  className={styles.ul}>
               <li className={styles.li}>
-                  <a href={item.href} className={styles.a} 
-                    target="_blank" rel="noopener noreferrer">
+                  <a href={item.href} className={styles.a} target="_blank" rel="noopener noreferrer">
                     <img src={item.icons} className={styles.icon}/>
                     {item.title}
                   </a>

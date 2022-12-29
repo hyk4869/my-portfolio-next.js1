@@ -1,0 +1,48 @@
+.menu{
+    padding: 0;
+    margin: 0;
+}
+
+.ul{
+  height: auto;
+  padding: 0;
+  width: 100%;
+
+}
+
+.li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 0;
+    position: relative;
+    color: #333;
+    text-shadow: 1px 0 10px #FC0;
+    list-style: none;
+    font-size: 20px;
+    transition: 0.3s;
+
+}
+
+.li:hover{
+    top: -5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.a{
+    font-weight: 600;
+    flex: 70%;
+
+}
+
+.icon{
+    /* padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center; */
+    flex: 30%;
+    /* place-items: center;
+    text-align: center; */
+}
