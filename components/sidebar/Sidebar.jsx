@@ -25,7 +25,7 @@ export function Sidebar() {
               <li className={styles.li}>
                   <a href={item.href} className={styles.a} 
                     target="_blank" rel="noopener noreferrer">
-                    <img src={item.icons} className={stlyes.icon}/>
+                    <img src={item.icons} className={styles.icon}/>
                     {item.title}
                   </a>
               </li>
