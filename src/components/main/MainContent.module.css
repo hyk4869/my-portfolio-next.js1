@@ -1,0 +1,14 @@
+.MainContent{
+    /* color: blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
+    /* grid-column: 3/4;
+    grid-row: 3/4; */
+}
+
+.church{
+    width: 100vw;
+    height: 100vh;
+
+}

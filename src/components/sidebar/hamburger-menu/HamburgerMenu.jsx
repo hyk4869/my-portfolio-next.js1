@@ -1,5 +1,5 @@
 import { Ballet, Inter } from '@next/font/google'
-import styles from '../sidebar/Sidebar.module.css';
+import styles from '../hamburger-menu/HamburgerMenu.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,23 +12,15 @@ const ITEM =[{ href: "/", icons: '/images/menu-icons/home.png', title: "Home"},
 ]
 
 
-export function Sidebar() {
+export function HamburgerMenu() {
+  const [open, setOpen] = useState(false);
+  const toggleFunction = () => {
+    setOpen((prevState) => !prevState);
+  };
+  
   return (
     <>
-      <div className={styles.menu}>
-        {ITEM.map(item =>{
-          return(
-            <ul key={item.href}  className={styles.ul}>
-              <li className={styles.li}>
-                  <a href={item.href} className={styles.a} target="_blank" rel="noopener noreferrer">
-                    <img src={item.icons} className={styles.icon}/>
-                    {item.title}
-                  </a>
-              </li>
-            </ul>
-          )
-        })}
-      </div>
+
     </>
   )
 }

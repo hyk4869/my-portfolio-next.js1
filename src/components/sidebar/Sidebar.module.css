@@ -1,31 +1,36 @@
 .menu{
-    height: 100vh;
-    width: 230px;
-    padding: 10px 10px 0 10px;
-    background-color: red;
+    height: auto;
+    width: 100vw;
+    padding: 10px 10px 0px 0px;
+    margin: auto;
+    background-color: rgba(255, 208, 106, 0.103);
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+
+
 }
 
-.ul{
-
-}
 
 .li{
     width: 100%;
-    height: 70px;
-    padding: 10px 0 0 10px;
+    height: auto;
+    padding: 0px 15px 0px 15px;
+    margin: 0 0px 0 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 15px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
 
+
+
+    /*アニメーション*/
     top: 0;
     position: relative;
-    color: #333;
     text-shadow: 1px 0 10px #FC0;
     list-style: none;
-    font-size: 20px;
     transition: 0.3s;
 
 }
@@ -36,15 +41,16 @@
 }
 
 .a{
-    font-weight: 600;
-    flex: 60%;
-    line-height: 60px;
+    line-height: 50px;
+    color: inherit;
+    text-decoration: none;
+    
 }
 
 .icon{
     flex: 30%;
     padding: 10px 10px 0 0;
-    margin: 0 20px -5px 0;
-    width: 40px;
-    height: 40px;
+    margin: 0 7px -2px 0;
+    width: 30px;
+    height: 30px;
 }
