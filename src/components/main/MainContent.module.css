@@ -1,15 +1,31 @@
-.MainContent{
-    /* color: blue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; */
-    /* grid-column: 3/4;
-    grid-row: 3/4; */
-}
-
 .church{
     width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: -5;
+
+
+    animation-name: fadeInAnime;/*1で解説*/
+    animation-fill-mode:backwards;/*2で解説*/
+    animation-duration:3s;/*3で解説*/
+    animation-iteration-count:initial;/*4で解説*/
+    animation-timing-function:ease-in-out;/*5で解説*/
+    animation-delay: 0.3s;/*6で解説*/
+    animation-direction:normal;/*7で解説*/
+    
 }
+
+/*1で解説*/
+@keyframes fadeInAnime{
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+
+
+/* filter: blur(4px); */
