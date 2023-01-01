@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className={styles.main_css}>
         {/* <Sidebar/> */}
-        {/* <MainContent/> */}
+        <MainContent/>
         <HamburgerMenu/>
 
       </main>

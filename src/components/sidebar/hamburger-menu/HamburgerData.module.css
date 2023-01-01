@@ -1,0 +1,73 @@
+.menu{
+    position: absolute;
+    height: 100vh;
+    width: 230px;
+    padding: 80px 10px 0px 0px;
+    background-color: rgb(255, 208, 106);
+    transform: translateX(-100%);
+    transition: all 0.35s;
+}
+
+
+.li{
+    width: 200px;
+    height: auto;
+    padding: 0px 0px 10px 15px;
+    margin: 0px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+ 
+
+
+
+    /*アニメーション*/
+    top: 0;
+    position: relative;
+    text-shadow: 1px 0 10px #FC0;
+    list-style: none;
+    transition: 0.3s;
+
+}
+
+.li:hover{
+    top: -5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.a{
+    line-height: 60px;
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.icon{
+    flex: 30%;
+    padding: 10px 10px 0 0;
+    margin: 0 7px -5px 0;
+    width: 30px;
+    height: 30px;
+}
+
+.menu1{
+    transform: translateX(0%);
+
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.178);
+    display: none;
+}
+
+.backdrop1{
+display: block;
+}
