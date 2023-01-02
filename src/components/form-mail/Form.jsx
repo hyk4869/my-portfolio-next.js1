@@ -1,24 +1,81 @@
-import { Inter } from '@next/font/google'
+import { useState } from 'react';
 import styles from '../form-mail/Form.module.css';
 
-
-const inter = Inter({ subsets: ['latin'] })
-
 export function Form() {
+    const initialValues = {username: "", email:"", textBox:""}
+    const[formValues, setFormValues] = useState(initialValues);
+    const[formErrors, setFormErrors] = useState({});
+
+
+    const handleChange = (e) =>{
+        // console.log(e.target.value)
+        // console.log(formValues)
+        const {name, value} = e.target;
+        setFormValues({...formValues, [name]:value});
+    }
+
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        // 内容を送信
+        setFormErrors(validate(formValues));
+
+    }
+
+    const validate = (values) =>{
+        const errors = {};
+        const regex = /^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/;
+        if(!values.username){
+            errors.username = "Please, insert your name here"
+        }
+        if(!values.email){
+            errors.email = "Please, insert your email here"
+        } else if(!regex.test(values.email)){
+            errors.email = "Please, insert your correct email here"
+        }
+        return errors;
+    }
 
   return (
     <>
         <div className={styles.formContainer}>
-            <form action="">
-                <h1>Contact Form</h1>
+            <form action="" className={styles.formsub} onSubmit={(e) => handleSubmit(e)}>
+                <h1 className={styles.h1}>Contact Form</h1>
                 <hr/>
+                <div className={styles.uiForm}>
+                    <div className={styles.formFied}>
+                        <label htmlFor="username" className={styles.label}>Name</label>
+                        <input type="text" placeholder='Your Name' className={styles.text} name="username" onChange={(e) => handleChange(e)}/>
+                    </div>
+                    <p className={styles.errorMsg}>{formErrors.username}</p>
+
+                    <div className={styles.formFied}>
+                        <label htmlFor="email" className={styles.label}>Mail</label>
+                        <input type="text" placeholder='Your Email' className={styles.text} name="email" onChange={(e) => handleChange(e)}/>
+                    </div>
+                    <p className={styles.errorMsg}>{formErrors.email}</p>
 
 
-                <div className={styles.formbtn}>
-                    <button type="submit" className={styles.btn}>
-                        Submit
-                    </button> 
+                    <div className={styles.formFied}>
+                        <label htmlFor="radio" className={styles.label}>Language</label>
+                        <div className={styles.radiobtn}>
+                            <input type="radio" name= 'language' className={styles.radio}/> Japanese
+                            <input type="radio" name= 'language' className={styles.radio}/> English
+                            <input type="radio" name= 'language' className={styles.radio}/> Other
+                        </div>
+                    </div>
+
+                    <div className={styles.formFied}>
+                        <label htmlFor="textBox" className={styles.label}>Detail</label>
+                        <textarea cols="30" rows="10" placeholder='Detail' className={styles.textArea} name="textBox" onChange={(e) => handleChange(e)}></textarea>
+                    </div>
+
+                    <div className={styles.formbtn}>
+                        <button type="submit" className={styles.btn}>
+                            Submit
+                        </button> 
+                    </div>
                 </div>
+
             </form>
         </div>
 

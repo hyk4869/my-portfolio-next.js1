@@ -1,10 +1,4 @@
-import { Inter } from '@next/font/google'
-import { useEffect, useState } from 'react';
 import styles from '../main/MainContent.module.css';
-
-const inter = Inter({ subsets: ['latin'] })
-
-
 
 export function MainContent() {
 

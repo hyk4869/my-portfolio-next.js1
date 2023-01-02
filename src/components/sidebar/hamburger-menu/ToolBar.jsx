@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from '../hamburger-menu/ToolBar.module.css'
 
-
-
 export function ToolBar({openSidebar, menu}) {
 
     return (

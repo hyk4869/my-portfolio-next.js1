@@ -1,7 +1,5 @@
 import { Ballet, Inter } from '@next/font/google'
 import { useState } from 'react';
-import styles from '../hamburger-menu/HamburgerMenu.module.css';
-
 import { BackDrop } from './BackDrop';
 import { HamburgerData } from './HamburgerData';
 import { ToolBar } from './ToolBar';
