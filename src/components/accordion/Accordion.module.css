@@ -1,11 +1,16 @@
 .faqParents{
+    margin: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479));
+    /* background-color: rgba(238, 196, 134, 0.479); */
+    padding-top: 100px;
+    overflow: hidden;
+
 }
 
 @media screen and (max-width:767px){
@@ -18,6 +23,7 @@
 
 .child{
     width: 700px;
+
 }
 
 @media screen and (max-width:767px){
@@ -31,7 +37,7 @@
 }
 
 .questionParents{
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.842);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,23 +47,30 @@
 
 .question{
     padding: 10px;
+    color: white;
+
 }
 
 
 .answerParents{
     display: block;
-    background-color: blue;
+    background-color: rgba(255, 255, 255, 0.678);
     margin-bottom: 10px;
     padding: 0px 0px 0px 10px;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
 
 }
 
 .answer{
     padding: 10px;
+    
 }
 
 .span{
     font-size: 30px;
     padding-right: 10px;
+    color: rgb(238, 196, 134);
 }
 

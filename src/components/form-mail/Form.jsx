@@ -38,9 +38,13 @@ export function Form() {
   return (
     <>
         <div className={styles.formContainer}>
+
             <form action="" className={styles.formsub} onSubmit={(e) => handleSubmit(e)}>
+
                 <h1 className={styles.h1}>Contact Form</h1>
+
                 <hr/>
+                
                 <div className={styles.uiForm}>
                     <div className={styles.formFied}>
                         <label htmlFor="username" className={styles.label}>Name</label>

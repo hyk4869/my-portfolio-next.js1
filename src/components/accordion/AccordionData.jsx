@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../accordion/Accordion.module.css'
 
 
@@ -7,7 +7,7 @@ export function AccordionData() {
     const Data =[
         {
             question:'どのような技術を使いましたか？',
-            answer:'JavaScriptのReatを使用しました。'
+            answer:'JavaScriptのReactを使用しました。'
         },
         {
             question:'学習したプログラミング言語は何ですか？',
@@ -24,8 +24,27 @@ export function AccordionData() {
         {
             question:'質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文',
             answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
-        }
+        },
+        {
+            question:'質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文',
+            answer:'回答・テスト長文'
+        },
+        {
+            question:'質問・テスト長文',
+            answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
+        },
+        {
+            question:'質問・テスト長文2',
+            answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
+        },
     ]
+
+    const [showInfo,setShowInfo] = useState(false);
+
+    const handleClick = () =>{
+        setShowInfo((prevState) => !prevState)
+        console.log(handleClick)
+    }
 
   return (
     <>
@@ -36,12 +55,11 @@ export function AccordionData() {
 
                         <div className={styles.grandchild}>
 
-                            <div className={styles.questionParents}>
+                            <div className={styles.questionParents} onClick={(e)=>handleClick(e)}>
                                 <h2 className={styles.question}>
                                     {item.question} 
                                 </h2>
                                 <span className={styles.span}>+</span>
-
 
                             </div>
 
