@@ -1,0 +1,63 @@
+.faqParents{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+@media screen and (max-width:767px){
+    .faqParents{
+        height: 100%;
+        padding-top: 100px;
+    }
+    
+}
+
+.child{
+    width: 700px;
+}
+
+@media screen and (max-width:767px){
+    .child{
+        width:80%;
+    }
+    
+}
+
+.grandchild{
+}
+
+.questionParents{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+
+
+.question{
+    padding: 10px;
+}
+
+
+.answerParents{
+    display: block;
+    background-color: blue;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+.answer{
+    padding: 10px;
+}
+
+.span{
+    font-size: 30px;
+    padding-right: 10px;
+}
+
