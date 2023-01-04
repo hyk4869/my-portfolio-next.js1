@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MainContent } from '../components/main/MainContent'
-import { HamburgerMenu } from '../components/sidebar/hamburger-menu/HamburgerMenu'
 
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
 
       <main className={styles.main_css}>
         <MainContent/>
-        <HamburgerMenu/>
 
       </main>
     </>

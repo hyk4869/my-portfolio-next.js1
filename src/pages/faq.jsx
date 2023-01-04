@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { Accordion } from "../components/accordion/Accordion";
-import { HamburgerMenu } from "../components/sidebar/hamburger-menu/HamburgerMenu";
 import styles from '../styles/Home.module.css'
 
 
@@ -16,7 +15,6 @@ export default function faq() {
         </Head>
   
         <main className={styles.main_css}>
-          <HamburgerMenu/>
           <Accordion/>
 
   
