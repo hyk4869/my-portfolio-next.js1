@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from '../form-mail/Form.module.css';
 
-export function Form() {
+export function ContactForm() {
     const initialValues = {username: "", email:"", textBox:""}
     const[formValues, setFormValues] = useState(initialValues);
     const[formErrors, setFormErrors] = useState({});

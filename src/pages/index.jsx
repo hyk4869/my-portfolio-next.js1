@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import { MainContent } from '../components/main/MainContent'
 
 
+
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
 
       <main className={styles.main_css}>
         <MainContent/>
+
 
       </main>
     </>

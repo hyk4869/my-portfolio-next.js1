@@ -1,31 +1,120 @@
-.church{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: -5;
-
-
-    animation-name: fadeInAnime;/*1で解説*/
-    animation-fill-mode:backwards;/*2で解説*/
-    animation-duration:3s;/*3で解説*/
-    animation-iteration-count:initial;/*4で解説*/
-    animation-timing-function:ease-in-out;/*5で解説*/
-    animation-delay: 0.3s;/*6で解説*/
-    animation-direction:normal;/*7で解説*/
-    
+.background{
+  background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479));
+  position: relative;
+  z-index: -10;
 }
 
-/*1で解説*/
-@keyframes fadeInAnime{
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+/**********************************************************/
+.section1{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.content{
+  margin: 0px, 0, 0px, 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.h1{
+  font-size: 3rem;
+  color: white;
+  padding: 80px;
+}
+
+.image{
+  display: block;
+  position: relative;
+  left: -100px;
+  top: -20px;
+  border-radius: 10px;
 }
 
 
+.textTile{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  z-index: 10;
+  padding: 15px;
+  transform: translate(330px,150px);
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 
-/* filter: blur(4px); */
+}
+
+.h2{
+
+}
+
+.p{
+}
+
+
+/**********************************************************/
+
+.section2{
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 90px;
+  margin-bottom: 100px;
+}
+
+.image2{
+  display: block;
+  position: relative;
+  right: -220px;
+  top: -10px;
+  border-radius: 10px;
+}
+
+.textTile2{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  z-index: 10;
+  padding: 15px;
+  transform: translate(-300px,80px);
+}
+
+/**********************************************************/
+
+.section3{
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding-top: 90px;
+  margin-bottom: 100px;
+}
+
+.image3{
+  display: block;
+  position: relative;
+  right: -220px;
+  top: -10px;
+  border-radius: 10px;
+}
+
+.textTile3{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  z-index: 10;
+  padding: 15px;
+  transform: translate(-300px,80px);
+}

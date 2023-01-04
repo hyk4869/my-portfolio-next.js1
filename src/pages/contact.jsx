@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Form } from '../components/form-mail/Form'
+import { ContactForm } from '../components/form-mail/ContactForm'
 
 
 export default function Contact() {
@@ -15,7 +15,7 @@ export default function Contact() {
       </Head>
 
       <main className={styles.main_css}>
-        <Form/>
+        <ContactForm/>
 
       </main>
     </>
