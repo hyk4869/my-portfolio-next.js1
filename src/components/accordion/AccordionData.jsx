@@ -30,51 +30,49 @@ export function AccordionData() {
             answer:'回答・テスト長文'
         },
         {
-            question:'質問・テスト長文',
+            question:'質問・テスト長文　パターン1',
             answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
         },
         {
-            question:'質問・テスト長文2',
-            answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
+            question:'質問・テスト長文　パターン2',
+            answer:'回答・テスト長文'
         },
         {
-            question:'質問・テスト長文3',
-            answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
-        },
-        {
-            question:'質問・テスト長文4',
+            question:'質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、質問・テスト長文、　パターン3',
             answer:'回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、回答・テスト長文、'
         },
     ]
 
     const [showInfo,setShowInfo] = useState(false);
 
-    const handleClick = () =>{
-        setShowInfo((prevState) => !prevState)
-        console.log(handleClick)
+    const handleClick = (index) =>{
+        if (showInfo === index){
+            return setShowInfo();
+        }
+        setShowInfo(index)
     }
 
   return (
     <>
         <div className={styles.faqParents}>
-            {Data.map(item =>{
+            {Data.map((item,index) =>{
                 return(
                     <div key={item.question} className={styles.child}>
 
-                        <div className={styles.grandchild}>
+                        <div className={styles.grandchild} onClick={()=>handleClick(index)}>
 
-                            <div className={styles.questionParents} onClick={(e)=>handleClick(e)}>
-                                <h2 className={styles.question}>
-                                    {item.question} 
-                                </h2>
-                                <span className={styles.span}>+</span>
+                            <div className={styles.questionParents}>
+                                <h2 className={styles.question}>{item.question} </h2>
+                                <span className={`${styles.span} ${showInfo === index ? styles.span2 : styles.span}`}>+</span>
 
                             </div>
 
-                            <div className={styles.answerParents}>
+                            <div className={`${styles.answerParents} 
+                            ${showInfo === index ? styles.answerParents : styles.answerParents2}`} onClick={handleClick}>
                                 <p className={styles.answer}>
                                     {item.answer}
                                 </p>
+
                             </div>
 
                         </div>

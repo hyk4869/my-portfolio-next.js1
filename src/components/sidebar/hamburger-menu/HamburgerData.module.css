@@ -8,6 +8,11 @@
     transition: all 0.35s;
 }
 
+.menu1{
+    transform: translateX(0%);
+
+}
+
 
 .li{
     width: 200px;
@@ -53,10 +58,6 @@
     height: 30px;
 }
 
-.menu1{
-    transform: translateX(0%);
-
-}
 
 .backdrop{
     position: fixed;
