@@ -10,7 +10,7 @@ export function MainContent() {
           <div className={styles.content}>
             <h1 className={styles.h1}>Yuuki's World</h1>
             
-            <Image src="/images/background/church.jpg" width={600} height={400} alt="church" className={styles.image}></Image>
+            <Image href="/images/background/church.jpg" width={600} height={400} alt="church" className={styles.image}></Image>
             
             <div className={styles.textTile}>
               <h2 className={styles.h2}>My first Portifolio</h2>
@@ -30,7 +30,7 @@ export function MainContent() {
           <div className={styles.content}>
             <h1 className={styles.h1}>Our service</h1>
             
-            <Image src="/images/background/cold.jpg" width={600} height={400} alt="church" className={styles.image2}></Image>
+            <Image href="/images/background/cold.jpg" width={600} height={400} alt="church" className={styles.image2}></Image>
             
             <div className={styles.textTile2}>
               <h2 className={styles.h2}>My first Portifolio</h2>
@@ -52,7 +52,7 @@ export function MainContent() {
           <div className={styles.content}>
             <h1 className={styles.h1}>Feature</h1>
             
-            <Image src="/images/background/ball.jpg" width={600} height={400} alt="church" className={styles.image3}></Image>
+            <Image href="/images/background/ball.jpg" width={600} height={400} alt="church" className={styles.image3}></Image>
             
             <div className={styles.textTile3}>
               <h2 className={styles.h2}>My first Portifolio</h2>
