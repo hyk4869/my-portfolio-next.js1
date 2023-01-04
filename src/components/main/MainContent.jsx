@@ -8,7 +8,11 @@ export function MainContent() {
       <div className={styles.background}>
         <section className={styles.section1}>
           <div className={styles.content}>
-            <h1 className={styles.h1}>Yuuki&apos;s World</h1>
+            
+            <h1 className={styles.h1}>
+              {/* <Image src="/images/icons/001-react.png" width={50} height={50} alt="react" className={styles.icon}></Image> */}
+              Yuuki&apos;s World
+              </h1>
             
             <Image src="/images/background/church.jpg" width={600} height={400} alt="church" className={styles.image}></Image>
             

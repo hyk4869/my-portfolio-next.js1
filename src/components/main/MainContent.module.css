@@ -21,10 +21,17 @@
 
 }
 
+/* .icon{
+  position: absolute;
+  left: 10px;
+  bottom: 94px;
+} */
+
 .h1{
   font-size: 3rem;
   color: white;
   padding: 80px;
+  position: relative;
 }
 
 .image{
