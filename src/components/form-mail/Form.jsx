@@ -62,9 +62,12 @@ export function Form() {
                     <div className={styles.formFied}>
                         <label htmlFor="radio" className={styles.label}>Language</label>
                         <div className={styles.radiobtn}>
-                            <input type="radio" name= 'language' className={styles.radio}/> Japanese
-                            <input type="radio" name= 'language' className={styles.radio}/> English
-                            <input type="radio" name= 'language' className={styles.radio}/> Other
+                            <input type="radio" name= 'language' className={styles.radio} id='radio1'/>
+                            <label htmlFor="radio1">Japanese</label>
+                            <input type="radio" name= 'language' className={styles.radio} id='radio2'/>
+                            <label htmlFor="radio2">English</label>
+                            <input type="radio" name= 'language' className={styles.radio} id='radio3'/>
+                            <label htmlFor="radio3">Other</label>
                         </div>
                     </div>
 
