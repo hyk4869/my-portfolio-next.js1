@@ -9,7 +9,9 @@ export function SkillFunction({slide}) {
         <div>
             {SkillData.map((slide, index) =>{
                 return(
-                    <Image key={slide.image} src={slide.image} width={600} height={400} alt='image.slide'></Image>
+                    <div key={slide.image} >
+                        <Image src={slide.image} width={600} height={400} alt='image.slide'></Image>
+                    </div>
                 )
             })}
         </div>
