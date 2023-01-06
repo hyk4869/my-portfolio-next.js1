@@ -1,9 +1,18 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import {SkillData} from './SkillData'
 
-export function SkillFunction() {
+export function SkillFunction({slide}) {
   return (
     <>
-    aaa
+        <div>
+            {SkillData.map((slide, index) =>{
+                return(
+                    <Image src={slide.image} width={600} height={400} alt='image.slide'></Image>
+                )
+            })}
+        </div>
     </>
   )
 }
