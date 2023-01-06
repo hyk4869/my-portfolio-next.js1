@@ -1,6 +1,6 @@
 .background{
   background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479));
-  position: relative;
+  /* position: relative; */
   z-index: -10;
   overflow: hidden;
 }
@@ -8,12 +8,11 @@
 /**********************************************************/
 .section1{
   display: block;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .content{
-  margin: 0px, 0, 0px, 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,68 +28,81 @@
 }
 
 .image{
-  display: block;
+  display: inline-block;
   position: relative;
-  left: -100px;
-  top: -20px;
+  right: 30%;
   border-radius: 10px;
 }
 
 
 .textTile{
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: inline;
   width: 20%;
   z-index: 10;
   padding: 15px;
+  bottom: 17%;
+  right: 28%;
   transform: translate(330px,150px);
-  background-color: rgba(255, 255, 255, 0.336);
+  box-sizing: 300px;
+  background-color: rgba(255, 255, 255, 0.514);
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  overflow-y: auto;
 
 }
+
 
 /**********************************************************/
 
 .section2{
   display: block;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  padding-top: 90px;
-  margin-bottom: 100px;
+}
+
+.content2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.demo2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .image2{
   display: block;
   position: relative;
-  right: -220px;
-  top: -10px;
+  left: 75%;
   border-radius: 10px;
 }
 
 .textTile2{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: inline-block;
   width: 20%;
   z-index: 10;
   padding: 15px;
+  right: 30%;
   transform: translate(-300px,80px);
+}
+
+.h2_2{
+  display: block;
 }
 
 /**********************************************************/
 
 .section3{
   display: block;
-  height: 100%;
-  width: 100%;
-  padding-top: 90px;
-  margin-bottom: 100px;
+  height: 100vh;
+  width: 100vw;
 }
 
 .content3{
@@ -107,7 +119,7 @@
 
 }
 
-.demo{
+.allFeature{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -117,7 +129,7 @@
 
 .innner_content{
   display: block;
-  margin: 50px;
+  margin: 60px;
 }
 
 .image3{
