@@ -89,13 +89,13 @@ export function MainContent() {
               {Feature.map(item =>{
                 return(
                   <Fade bottom duration={2000} delay={200}>
-                    <div key={item.FeatureTitle} className={styles.innner_content}>
+                  <div key={item.FeatureTitle} className={styles.innner_content}>
                       <Image src={item.icons} width={80} height={80} alt="feature picture" className={styles.image3}></Image>
                       <div className={styles.textTile3}>
                         <h2 className={styles.h2_3}>{item.FeatureTitle}</h2>
                         <p className={styles.p3}>{item.description}</p>
                       </div>
-                    </div>
+                  </div>
                   </Fade>
                 );
               })}
