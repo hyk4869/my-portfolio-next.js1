@@ -1,7 +1,18 @@
 import Image from 'next/image';
 import styles from '../main/MainContent.module.css';
+import { useEffect, useRef } from 'react';
+
 
 export function MainContent() {
+
+  const Feature=[
+    {FeatureTitle: "WEB Develop",icons:"/images/icons/website.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+    {FeatureTitle: "High Performance",icons:"/images/icons/diagram.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+    {FeatureTitle: "Excellent Technology",icons:"/images/icons/technology.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+    {FeatureTitle: "Great Maintenance",icons:"/images/icons/tools.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."}
+  ]
+
+
 
   return (
     <>
@@ -53,24 +64,29 @@ export function MainContent() {
         </section>
 
         <section className={styles.section3}>
-          <div className={styles.content}>
-            <h1 className={styles.h1}>Feature</h1>
-            
-            <Image src="/images/background/ball.jpg" width={600} height={400} alt="ball" className={styles.image3}></Image>
-            
-            <div className={styles.textTile3}>
-              <h2 className={styles.h2}>My first Portifolio</h2>
-              <p className={styles.p}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-              Repellendus fuga quae vel et numquam molestias iusto, sunt voluptatum! Natus, nostrum. 
-              Numquam consectetur, vitae mollitia ullam perspiciatis expedita quos incidunt optio?
-              </p>
+          <div className={styles.content3}>
+            <h1 className={styles.h1_3}>Feature</h1>
+
+            <div className={styles.demo}>
+              {Feature.map(item =>{
+                return(
+                  <div key={item.FeatureTitle} className={styles.innner_content}>
+                    <Image src={item.icons} width={80} height={80} alt="feature picture" className={styles.image3}></Image>
+                    <div className={styles.textTile3}>
+                      <h2 className={styles.h2_3}>{item.FeatureTitle}</h2>
+                      <p className={styles.p3}>{item.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
           </div>
+
         </section>
+
       </div>
+
     </>
   )
 }
-

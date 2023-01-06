@@ -1,0 +1,4 @@
+yarn add react-reveal
+yarn add react-scroll
+
+上記のものを入れている
