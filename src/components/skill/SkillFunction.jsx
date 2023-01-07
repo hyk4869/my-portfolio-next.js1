@@ -34,8 +34,8 @@ export function SkillFunction({slide}) {
             <div className={styles.imageParents}>
                 {SkillData.map((slide, index) =>{
                     return(
-                        <div className={styles.contentParents}>
-                            <div className={index === current? styles.slideActive : styles.slide} key={slide.image}>
+                        <div className={styles.contentParents} key={slide.image}>
+                            <div className={index === current? styles.slideActive : styles.slide}>
                                 {index === current && (<Image src={slide.image} className={styles.imageIcons}
                                 width={200} height={200} alt='image.slide'></Image>)}
                             </div>
