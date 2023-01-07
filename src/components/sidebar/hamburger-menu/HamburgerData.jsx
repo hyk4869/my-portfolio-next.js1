@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import styles from '../hamburger-menu/HamburgerData.module.css'
 
@@ -17,10 +18,10 @@ export function HamburgerData({menu}) {
           return(
             <ul key={item.href}  className={styles.ul}>
               <li className={styles.li}>
-                  <a href={item.href} className={styles.a} target="_blank" rel="noopener noreferrer">
+                  <Link href={item.href} className={styles.a}>
                     <img src={item.icons} className={styles.icon}/>
                     {item.title}
-                  </a>
+                  </Link>
               </li>
             </ul>
           )
@@ -29,3 +30,5 @@ export function HamburgerData({menu}) {
     </>
   )
 }
+
+// target="_blank" rel="noopener noreferrer"

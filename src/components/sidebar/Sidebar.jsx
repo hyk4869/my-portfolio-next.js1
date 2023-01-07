@@ -1,4 +1,5 @@
 import { Ballet, Inter } from '@next/font/google'
+import Link from 'next/link';
 import styles from '../sidebar/Sidebar.module.css';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,10 +21,10 @@ export function Sidebar() {
           return(
             <ul key={item.href}  className={styles.ul}>
               <li className={styles.li}>
-                  <a href={item.href} className={styles.a} target="_blank" rel="noopener noreferrer">
+                  <Link href={item.href} className={styles.a}>
                     <img src={item.icons} className={styles.icon}/>
                     {item.title}
-                  </a>
+                  </Link>
               </li>
             </ul>
           )
@@ -32,3 +33,5 @@ export function Sidebar() {
     </>
   )
 }
+
+// target="_blank" rel="noopener noreferrer"
