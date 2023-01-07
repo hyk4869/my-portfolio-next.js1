@@ -20,9 +20,9 @@ export function SkillFunction({slide}) {
         setCurrent(current === 0 ? length -1 : current -1)
     }
 
-    if (!Array.isArray(slide) || slide.length <= 0){
-        return null
-    }
+    // if (!Array.isArray(slide) || slide.length <= 0){
+    //     return null
+    // }
     
 
     return (
