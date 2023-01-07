@@ -8,8 +8,6 @@ export function ContactForm() {
 
 
     const handleChange = (e) =>{
-        // console.log(e.target.value)
-        // console.log(formValues)
         const {name, value} = e.target;
         setFormValues({...formValues, [name]:value});
     }
@@ -89,6 +87,3 @@ export function ContactForm() {
     </>
   )
 }
-
-// {`${styles.church} ${ ? styles.church1 : styles.church}`}
-// className={`${styles.menu} ${menu ? styles.menu1 : styles.menu}`}

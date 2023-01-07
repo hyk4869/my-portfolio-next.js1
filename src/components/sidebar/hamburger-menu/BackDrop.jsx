@@ -9,7 +9,3 @@ export function BackDrop({menu,closeMenu}) {
   )
 }
 
-
-// `${styles.menu} ${menu ? "styles.menu--open" : "styles.menu"}`
-
-// menu? "backdrop backdrop--open": "backdrop"

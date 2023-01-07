@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from '../main/MainContent.module.css';
-import { useEffect, useRef } from 'react';
 import Fade from 'react-reveal/Fade';
 
 
@@ -23,7 +22,6 @@ export function MainContent() {
 
             <Fade left duration={2000} delay={200}>
               <h1 className={styles.h1}>
-                {/* <Image src="/images/icons/001-react.png" width={50} height={50} alt="react" className={styles.icon}></Image> */}
                 Yuuki&apos;s World
                 </h1>
               </Fade>

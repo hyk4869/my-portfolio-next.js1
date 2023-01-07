@@ -11,8 +11,6 @@ export function HamburgerMenu() {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleSidebar = () => {
     setOpenMenu((prevState) => !prevState);
-    console.log(toggleSidebar)
-
   };
 
   return (
