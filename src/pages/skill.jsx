@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { SkillData } from '../components/skill/SkillData'
 import { SkillFunction } from '../components/skill/SkillFunction'
-
 import styles from '../styles/Home.module.css'
 
 
