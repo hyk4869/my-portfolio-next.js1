@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MainContent } from '../components/main/MainContent'
 import { ContactForm } from '../components/form-mail/ContactForm'
+import { Button } from '../components/darkbutton/Button'
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main_css}>
+        <Button/>
         <MainContent/>
         <ContactForm/>
 
