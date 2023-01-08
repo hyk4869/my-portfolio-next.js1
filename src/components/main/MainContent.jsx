@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../main/MainContent.module.css';
-import Fade from 'react-reveal/Fade';
+import Fade from '/node_modules/react-reveal/Fade';
 
 
 export function MainContent() {

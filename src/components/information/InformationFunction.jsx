@@ -4,9 +4,9 @@ import { InformationData } from './InformationData'
 import styles from '../information/Information.module.css'
 
 export function InformationFunction({Data}) {
-  const handleClick=(() => {
-    window.alert('clicked')
   
+  const handleClick=((e) => {
+    window.alert('clicked')
   });
 
 
