@@ -1,0 +1,22 @@
+.checkbtnParents{
+    background-color: blue;
+    font-size: 50px;
+    color: white;
+}
+
+.checkbtnParents2{
+    background-color: red;
+    font-size: 50px;
+    color: white;
+}
+
+.input{
+    position: absolute;
+    top: 30px;
+    margin-left: 20px;
+    transform: scale(3);
+}
+
+.label{
+    margin-left: 70px;
+}
