@@ -30,5 +30,3 @@ export function HamburgerData({menu}) {
     </>
   )
 }
-
-// target="_blank" rel="noopener noreferrer"

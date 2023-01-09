@@ -4,7 +4,7 @@ import { AccordionData } from './AccordionData'
 export function Accordion() {
   return (
     <>
-        <AccordionData/>
+      <AccordionData/>
     
     </>
   )

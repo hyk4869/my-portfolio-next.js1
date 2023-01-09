@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {SkillData} from './SkillData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa"
 import styles from '../skill/Skill.module.css'
@@ -20,10 +19,6 @@ export function SkillFunction({slide}) {
         setCurrent(current === 0 ? length -1 : current -1)
     }
 
-    // if (!Array.isArray(slide) || slide.length <= 0){
-    //     return null
-    // }
-    
 
     return (
         <>

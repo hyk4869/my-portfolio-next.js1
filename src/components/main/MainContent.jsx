@@ -7,8 +7,11 @@ export function MainContent() {
 
   const Feature=[
     {FeatureTitle: "WEB Develop",icons:"/images/icons/website.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+
     {FeatureTitle: "High Performance",icons:"/images/icons/diagram.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+
     {FeatureTitle: "Excellent Technology",icons:"/images/icons/technology.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."},
+    
     {FeatureTitle: "Great Maintenance",icons:"/images/icons/tools.png" ,description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, a."}
   ]
 

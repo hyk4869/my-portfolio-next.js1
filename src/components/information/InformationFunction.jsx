@@ -1,9 +1,8 @@
 import Image from 'next/image'
-import React, { useEffect } from 'react'
 import { InformationData } from './InformationData'
 import styles from '../information/Information.module.css'
 
-export function InformationFunction({Data}) {
+export function InformationFunction() {
   
   const handleClick=((e) => {
     window.alert('clicked')
