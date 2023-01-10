@@ -5,7 +5,7 @@ import { SkillFunction } from '../components/skill/SkillFunction'
 import styles from '../styles/Home.module.css'
 
 
-export default function Home() {
+export default function Skill() {
   return (
     <>
       <Head>

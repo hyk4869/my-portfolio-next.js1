@@ -15,7 +15,7 @@
     margin: 0px 0px 0px 0px;
     width: 40px;
     height: 4px;
-    background-color: rgb(255, 153, 0);
+    background-color: white;
     transition: all 0.5s;
     border-radius: 4px;
     z-index: 2;
@@ -28,7 +28,7 @@
     margin: 0px 0px 0px 0px;
     width: 40px;
     height: 4px;
-    background-color: rgb(255, 153, 0);
+    background-color: white;
     transition: all 0.5s;
     border-radius: 4px;
     z-index: 2;
@@ -41,7 +41,7 @@
     margin: 0px 0px 0px 0px;
     width: 40px;
     height: 4px;
-    background-color: rgb(255, 153, 0);
+    background-color: white;
     transition: all 0.5s;
     border-radius: 4px;
     z-index: 2;
@@ -52,7 +52,7 @@
 
 .sample1{
     margin: 0px 0px 0px 140px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     display: block;
     z-index: 3;
@@ -61,7 +61,7 @@
 
 .sample2{
     margin: 0px 0px 0px 140px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     display: block;
     z-index: 3;
@@ -70,7 +70,7 @@
 
 .sample3{
     margin: 0px 0px 0px 140px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     display: block;
     z-index: 3;

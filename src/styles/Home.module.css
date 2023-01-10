@@ -7,3 +7,19 @@
     background: linear-gradient(to right, rgb(25, 42, 71), rgba(25, 42, 72, 0.274));
 
 }
+
+.checkbtn{
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(10px);
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.check{
+
+}
+
+.label{
+    
+}
