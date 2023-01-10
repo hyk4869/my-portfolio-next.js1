@@ -1,5 +1,6 @@
 .main_css{
     background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479));
+    
 
 }
 
@@ -9,11 +10,10 @@
 }
 
 .checkbtn{
-    display: flex;
-    justify-content: flex-end;
-    transform: translateY(10px);
+    float: right;
+    transform: translateY(20px);
     font-size: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 .check{

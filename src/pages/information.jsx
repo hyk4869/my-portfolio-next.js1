@@ -5,7 +5,7 @@ import React from 'react'
 import { InformationData } from '../components/information/InformationData'
 import { InformationFunction } from '../components/information/InformationFunction'
 
-export default function Information() {
+export default function Information(props) {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ export default function Information() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main_css}>
+      <main className={`${styles.main_css} ${props.dark ? styles.main_css2 : styles.main_css}`}>
       <InformationFunction Data={InformationData}/>
       </main>
     </>

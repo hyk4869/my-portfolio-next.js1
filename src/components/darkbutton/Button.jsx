@@ -33,6 +33,6 @@ export function Button() {
   )
 }
 
-{/* <div className={`${css.main_css} ${dark ? css.main_css2 : css.main_css}`} onChange={handleClick}></div> */}
+{/* <div className={`${styles.main_css} ${dark ? styles.main_css2 : styles.main_css}`} onChange={handleClick}></div> */}
 
 

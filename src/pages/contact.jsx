@@ -4,7 +4,8 @@ import Image from 'next/image'
 import { ContactForm } from '../components/form-mail/ContactForm'
 
 
-export default function Contact() {
+export default function Contact(props) {
+
   return (
     <>
       <Head>
@@ -14,9 +15,8 @@ export default function Contact() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main_css}>
+      <main className={`${styles.main_css} ${props.dark ? styles.main_css2 : styles.main_css}`}>
         <ContactForm/>
-
       </main>
     </>
   )

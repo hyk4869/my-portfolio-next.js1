@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import React from 'react'
 import Head from 'next/head'
 
-export default function About() {
+export default function About(props) {
   return (
     <>
       <Head>
@@ -13,7 +13,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main_css}>
+      <main className={`${styles.main_css} ${props.dark ? styles.main_css2 : styles.main_css}`}>
 
 
       </main>

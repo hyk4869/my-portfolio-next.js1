@@ -3,19 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MainContent } from '../components/main/MainContent'
 import { ContactForm } from '../components/form-mail/ContactForm'
-import { Button } from '../components/darkbutton/Button'
 import { useState } from 'react'
 
 
 
-export default function Home() {
-
-  const[dark,setDark] = useState(false);
-  const handleClick = (e) =>{
-    setDark((dark) => !dark);
-    `${(e.target.checked === true)? console.log("クリック") : console.log("外れました")}`
-  }
-
+export default function Home(props) {
 
   return (
     <>
@@ -26,11 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`${styles.main_css} ${dark ? styles.main_css2 : styles.main_css}`} onChange={handleClick}>
-        <div>
-          <input type='checkbox' id='checkbox' name='checkbox'/>
-          <label htmlFor='checkbox'>チェック</label>
-        </div> 
+      <main className={`${styles.main_css} ${props.dark ? styles.main_css2 : styles.main_css}`}>
         <MainContent/>
         <ContactForm/>
       </main>
