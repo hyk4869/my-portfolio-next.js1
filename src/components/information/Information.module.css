@@ -1,23 +1,18 @@
 .parents{
-    /* background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479)); */
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    overflow-y: auto;
+    padding-top: 100px;
 }
 
 .master{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    transform: translateY(200px);
-    margin-bottom: 40px;
-
-
+    padding-bottom: 50px;
 }
 
 .children{
@@ -71,7 +66,7 @@
 
 .image{
     display: block;
-    margin: 10px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -87,4 +82,49 @@
 
 .p{
     width: 400px;
+}
+
+
+/**********************************************************************************
+/**********************************************************************************/
+
+@media(max-width:1320px){
+    .parents{
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    }
+    
+    .master{
+        
+
+    }
+    
+    .children{
+
+    }
+    
+    .image{
+        display: block;
+        cursor: pointer;
+    }
+    
+    .contents{
+        margin-bottom: 30px;
+        padding: 10px;
+
+    }
+    
+    .h2{
+    
+    }
+    
+    .p{
+        width: 400px;
+    }
+    
 }
