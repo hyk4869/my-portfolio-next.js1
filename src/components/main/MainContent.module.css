@@ -1,157 +1,181 @@
 .background{
-  /* background: linear-gradient(to right, rgb(243, 186, 100), rgba(238, 196, 134, 0.479)); */
-  /* position: relative; */
-  z-index: -10;
-  overflow: hidden;
 }
 
-/**********************************************************/
 .section1{
-  display: block;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .h1{
-  font-size: 3rem;
   color: white;
-  padding: 80px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
   position: relative;
+  top: -90px;
+  padding: 10px;
+  
 }
 
 .image{
-  display: inline-block;
   position: relative;
-  right: 30%;
+  left: -1%;
+  top: 10px;
+  transform: translate(-20%,-10%);
+  width: 80%;
+  height: 80%;
   border-radius: 10px;
-}
 
+}
 
 .textTile{
-  position: absolute;
-  display: inline;
-  width: 20%;
-  z-index: 10;
-  padding: 15px;
-  bottom: 17%;
-  right: 28%;
-  transform: translate(330px,150px);
-  box-sizing: 300px;
-  background-color: rgba(255, 255, 255, 0.514);
-  border-radius: 10px;
+  position: relative;
+  left: 45%;
+  top: -100px;
+  transform: translateX(150px);
+  background:rgba(248, 248, 248, 0.452);
   backdrop-filter: blur(5px);
-  overflow-y: auto;
-
+  width: 370px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
+.h2_1{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
 
-/**********************************************************/
+.p_1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+/**********************************************************************************/
 
 .section2{
-  display: block;
-  height: 100vh;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
 }
 
-.demo2{
+.h1_2{
+  color: white;
+  font-size: 40px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  top: -90px;
+  padding: 10px;
+  transform: translateX(250px);
+}
+.demo2{
+
 }
 
 .image2{
-  display: block;
   position: relative;
-  left: 75%;
+  left: -1%;
+  top: 10px;
+  transform: translate(55%,-10%);
+  width: 80%;
+  height: 80%;
   border-radius: 10px;
 }
 
 .textTile2{
   position: relative;
-  display: inline-block;
-  width: 20%;
-  z-index: 10;
-  padding: 15px;
-  right: 30%;
-  transform: translate(-300px,80px);
+  left: -20%;
+  top: -30px;
+  transform: translateX(100px);
+  background:rgba(248, 248, 248, 0.452);
+  backdrop-filter: blur(5px);
+  width: 370px;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .h2_2{
-  display: block;
+
 }
 
-/**********************************************************/
+
+.p_2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+
+
+
+/**********************************************************************************/
 
 .section3{
-  display: block;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
-}
-
-.content3{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.h1_3{
-  font-size: 3rem;
-  color: white;
-  padding: 80px;
+.content3{
 
+}
+
+.h1_3{
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -90px;
+  padding: 10px;
 }
 
 .allFeature{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 150px;
 
 }
 
 .innner_content{
-  display: block;
-  margin: 60px;
-}
-
-.image3{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
-.textTile3{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.image3{
+
+}
+
+.textTile3{
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h2_3{
-  font-size: 25px;
+  
 }
 
 .p3{
   width: 200px;
-
 }
-

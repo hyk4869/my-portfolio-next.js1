@@ -24,10 +24,8 @@ export function MainContent() {
           <div className={styles.content}>
 
             <Fade left duration={2000} delay={200}>
-              <h1 className={styles.h1}>
-                Yuuki&apos;s World
-                </h1>
-              </Fade>
+              <h1 className={styles.h1}>Yuuki&apos;s World</h1>
+            </Fade>
 
             <Fade bottom deration={2000} delay={500}>
               <Image src="/images/background/church.jpg" width={600} height={400} alt="church" className={styles.image}></Image>
@@ -53,7 +51,7 @@ export function MainContent() {
           <div className={styles.content2}>
 
             <Fade rigth duration={2000} delay={200}>
-              <h1 className={styles.h1}>Our service</h1>
+              <h1 className={styles.h1_2}>Our service</h1>
             </Fade>
             <div className={styles.demo2}>
               <Fade top duration={2000} delay={200}>
@@ -73,6 +71,7 @@ export function MainContent() {
                   </p>
                 </div>
               </Fade>
+
             </div>
 
           </div>

@@ -11,9 +11,9 @@
 
 .checkbtn{
     float: right;
-    transform: translateY(20px);
+    display: flex;
+    transform: translate(-30px,20px);
     font-size: 20px;
-    padding-right: 30px;
 }
 
 .check{
