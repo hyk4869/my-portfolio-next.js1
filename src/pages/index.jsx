@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { MainContent } from '../components/main/MainContent'
 import { ContactForm } from '../components/form-mail/ContactForm'
-import { useState } from 'react'
 
 
 

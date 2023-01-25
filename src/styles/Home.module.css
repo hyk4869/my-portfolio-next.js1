@@ -21,5 +21,11 @@
 }
 
 .label{
+    font-size: 15px;
+    user-select: none;
+}
+
+.inputBtn{
+    width: 25px;
     
 }

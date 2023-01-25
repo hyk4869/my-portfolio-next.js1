@@ -14,8 +14,9 @@ export default function App({ Component, pageProps }) {
   return (
     <div>
         <div className={styles.checkbtn} onChange={handleClick}>
-          <input type='checkbox' id='checkbox' name='checkbox' className={styles.input}/>
+          <input type='checkbox' id='checkbox' className={styles.input}/>
           <label htmlFor='checkbox' className={styles.label}>DarkMode on / of</label>
+
         </div>
       <HamburgerMenu/>
       <Component {...pageProps} dark={dark} setDark={setDark} handleClick={handleClick}/>
