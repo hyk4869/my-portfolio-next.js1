@@ -1,10 +1,21 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from '../form-mail/Form.module.css';
 
 export function ContactForm() {
     const initialValues = {username: "", email:"", textBox:""}
     const[formValues, setFormValues] = useState(initialValues);
     const[formErrors, setFormErrors] = useState({});
+    const[formSend,setFormSend] = useState("")
+
+    const nameRef = useRef(null)
+    const emailRef = useRef(null)
+    const messageRef = useRef(null)
+
+    let data ={
+        name:nameRef.current?.value,
+        email:emailRef.current?.value,
+        message:messageRef.current?.value,
+    }
 
 
     const handleChange = (e) =>{
@@ -12,12 +23,29 @@ export function ContactForm() {
         setFormValues({...formValues, [name]:value});
     }
 
-    const handleSubmit = (e) =>{
+
+    const handleSubmit = async (e) =>{
         e.preventDefault();
         // 内容を送信
         setFormErrors(validate(formValues));
 
-    }
+        await fetch("api/contact",{
+            method:"POST",
+            headers:{
+                Accept:"application/json, text/plain", 
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(data),
+        }).then((res)=>{
+            if(res.status === 200) setFormSend("メール送信完了。Message sent successfully.")
+        });
+
+        nameRef.current.value=""
+        emailRef.current.value=""
+        messageRef.current.value=""
+
+    };
+
 
     const validate = (values) =>{
         const errors = {};
@@ -33,6 +61,7 @@ export function ContactForm() {
         return errors;
     }
 
+
   return (
     <>
         <div className={styles.formContainer}>
@@ -46,13 +75,13 @@ export function ContactForm() {
                 <div className={styles.uiForm}>
                     <div className={styles.formFied}>
                         <label htmlFor="username" className={styles.label}>Name</label>
-                        <input type="text" placeholder='Your Name' className={styles.text} name="username" onChange={(e) => handleChange(e)}/>
+                        <input type="text" placeholder='Your Name' className={styles.text} name="username" onChange={(e) => handleChange(e)} ref={nameRef}/>
                     </div>
                     <p className={styles.errorMsg}>{formErrors.username}</p>
 
                     <div className={styles.formFied}>
                         <label htmlFor="email" className={styles.label}>Mail</label>
-                        <input type="text" placeholder='Your Email' className={styles.text} name="email" onChange={(e) => handleChange(e)}/>
+                        <input type="text" placeholder='Your Email' className={styles.text} name="email" onChange={(e) => handleChange(e)} ref={emailRef}/>
                     </div>
                     <p className={styles.errorMsg}>{formErrors.email}</p>
 
@@ -71,7 +100,7 @@ export function ContactForm() {
 
                     <div className={styles.formFied}>
                         <label htmlFor="textBox" className={styles.label}>Detail</label>
-                        <textarea cols="30" rows="10" placeholder='Detail' className={styles.textArea} name="textBox" onChange={(e) => handleChange(e)}></textarea>
+                        <textarea cols="30" rows="10" placeholder='Detail' className={styles.textArea} name="textBox" onChange={(e) => handleChange(e)} ref={messageRef}></textarea>
                     </div>
 
                     <div className={styles.formbtn}>
@@ -79,9 +108,15 @@ export function ContactForm() {
                             Submit
                         </button> 
                     </div>
+
                 </div>
 
             </form>
+
+            <div className={styles.formSend}>
+                {formSend}
+            </div>
+
         </div>
 
     </>
