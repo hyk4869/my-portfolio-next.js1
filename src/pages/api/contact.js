@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 export default function sendGmail(req,res){
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587,
+        port: 465,
         auth:{
             user: process.env.GMAILUSER,
             pass: process.env.GMAILPASSWORD,
